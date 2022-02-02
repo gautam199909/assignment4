@@ -2,6 +2,8 @@ language: node_js
 node_js:
   - "12"
 script:
-  - echo 'Building Start'
-  - node main.js
+  - echo 'Downloading dependencies'
+  - npm install mocha chai
+  - echo 'Unit testing start'
+  - npm run test
   
